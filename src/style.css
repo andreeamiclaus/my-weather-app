@@ -1,0 +1,96 @@
+body {
+  background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+  font-family: "Comfortaa", cursive;
+  color: black;
+}
+.container {
+  border: 1px solid black;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  max-width: 510px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  background: radial-gradient(
+    484px at 49.4% 19%,
+    rgb(23, 156, 214) 0%,
+    rgb(52, 48, 111) 100.2%
+  );
+
+  border-radius: 10px;
+  height: 700px;
+}
+.btn {
+  border-radius: 10px;
+  background-color: white;
+}
+h1 {
+  font-family: "Comfortaa", cursive;
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  padding-top: 50px;
+}
+h2 {
+  font-family: "Comfortaa", cursive;
+  color: black;
+  display: block;
+  margin-top: 10px;
+  margin-left: 10px;
+  text-align: center;
+  font-size: 15px;
+}
+h3 {
+  font-family: "Comfortaa", cursive;
+  color: white;
+  display: block;
+  margin-top: 10px;
+
+  text-align: center;
+  font-size: 25px;
+}
+
+.description {
+  text-align: center;
+  font-size: 22px;
+}
+.units {
+  margin: 0;
+  display: block;
+  margin-right: 20px;
+  font-size: 20px;
+  text-align: center;
+  color: white;
+}
+.conditions {
+  font-family: "Comfortaa", cursive;
+  font-size: 16px;
+  padding-top: 100px;
+  text-align: center;
+
+  color: white;
+}
+.wrapper {
+  padding: 15px 0;
+}
+.days {
+  color: white;
+  text-align: center;
+  margin: 0;
+}
+.days:hover {
+  color: black;
+  opacity: 0.9;
+  cursor: pointer;
+}
+.degrees {
+  color: white;
+  text-align: center;
+  margin: 0;
+}
+.row {
+  font-size: 25px;
+}
+.emoji {
+  text-align: center;
+  margin: 0;
+}

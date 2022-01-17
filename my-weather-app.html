@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+      link
+      css
+   />
+  
+   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  
+    <title>Weather App Challenge</title>
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <form id="search-form">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Type city"
+              autofocus="on"
+              shadow="small"
+              id="search-text-input"
+            />
+    
+        </div>
+        <div class="col-3">
+          <button type="submit"class=btn btn-primary>Search </button>
+        </div>
+
+        <div class="col-3">
+          <button type="submit"class=btn btn-success id="current-location-button">Current 📍</button>
+  
+        </div>
+      </div>
+    </form>
+      <div class="row">
+        <div class="col-6">
+         <h1 id="city"></h1>
+          <h2>Friday 17:05</h2>
+
+          <h3> 
+          <div class="temperature" id="temperature"> </div>
+        </h3>
+          <div class="units">C°/ F</div>
+          <div class="description" id="description"> </div>
+         
+
+
+        
+          
+        </div>
+        
+
+        <div class="col-6">
+          <div class="conditions">
+              <P>Feels like: <span id ="feels-like"></span>C°</P>
+          <p> Humidity:  <span id="humidity"> </span>%</p>
+           
+           <p> Wind: <span id="wind">  </span>km/h</p>
+   
+       
+          </div>
+        </div>
+      </div>
+
+      <hr />
+      <div class="row wrapper">
+        <div class="col-4">
+          <p class="days">Wednesday</p>
+          <p class="emoji">❄</p>
+          <p class="degrees">-1ºC</p>
+        </div>
+        <div class="col-4">
+          <p class="days">Thursday</p>
+          <p class="emoji">🌨</p>
+          <p class="degrees">0ºC</p>
+        </div>
+        <div class="col-4">
+          <p class="days">Friday</p>
+          <p class="emoji">🌧</p>
+          <p class="degrees">2ºC</p>
+        </div>
+      </div>
+      <hr />
+
+      <div class="row wrapper">
+        <div class="col-4">
+          <p class="days">Saturday</p>
+          <p class="emoji">🌧</p>
+          <p class="degrees">1ºC</p>
+        </div>
+        <div class="col-4">
+          <p class="days">Sunday</p>
+          <p class="emoji">🌧</p>
+          <p class="degrees">2ºC</p>
+        </div>
+        <div class="col-4">
+          <p class="days">Monday</p>
+          <p class="emoji">⛅</p>
+          <p class="degrees">3ºC</p>
+        </div>
+      </div>
+    </div>
+   <script src="src/script.js"></script>
+  </body>
+</html>
