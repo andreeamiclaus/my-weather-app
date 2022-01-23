@@ -14,9 +14,9 @@
    />
   
    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-  
-    <title>Weather App Challenge</title>
-    <link rel="stylesheet" href="src/style.css" />
+      <link rel="stylesheet" href="src/style.css" />
+    <title>Week 2 Challenge</title>
+    
   </head>
 
   <body>
@@ -46,25 +46,36 @@
     </form>
       <div class="row">
         <div class="col-6">
-         <h1 id="city"></h1>
+     
+         <h1 id="city">
+         
+         </h1>
           <h2>Friday 17:05</h2>
 
-          <h3> 
-          <div class="temperature" id="temperature"> </div>
-        </h3>
-          <div class="units">C°/ F</div>
-          <div class="description" id="description"> </div>
+    <div class="clearfix weather-temperature" >
+        <div class="temperature" style="display:flex" >
+          <img src="" alt="Clear" id="icon" class="icon" />
+
+           
+                  <strong id="temperature"></strong
+                  ><span class="units">
+                    <a href="#" id="celsius-link" class="active">°C</a> |
+                    <a href="#" id="fahrenheit-link">°F</a></span
+                  >
+                </div>
+                 </div>
+                
+      <div class="description" id="description"> </div>
          
 
-
+</div>
         
           
-        </div>
-        
+ 
 
         <div class="col-6">
           <div class="conditions">
-              <P>Feels like: <span id ="feels-like"></span>C°</P>
+              <P>Feels like: <span id ="feels-like"></span>°C</P>
           <p> Humidity:  <span id="humidity"> </span>%</p>
            
            <p> Wind: <span id="wind">  </span>km/h</p>

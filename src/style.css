@@ -17,7 +17,7 @@ body {
   );
 
   border-radius: 10px;
-  height: 700px;
+  height: 800px;
 }
 .btn {
   border-radius: 10px;
@@ -39,14 +39,15 @@ h2 {
   text-align: center;
   font-size: 15px;
 }
-h3 {
-  font-family: "Comfortaa", cursive;
-  color: white;
-  display: block;
-  margin-top: 10px;
 
+.icon {
+  position: relative;
+  top: -20px;
+}
+.temperature {
+  position: relative;
+  padding-top: 0px;
   text-align: center;
-  font-size: 25px;
 }
 
 .description {
@@ -56,8 +57,8 @@ h3 {
 .units {
   margin: 0;
   display: block;
-  margin-right: 20px;
-  font-size: 20px;
+
+  font-size: 15px;
   text-align: center;
   color: white;
 }
@@ -93,8 +94,4 @@ h3 {
 .emoji {
   text-align: center;
   margin: 0;
-}
-.footer {
-  text-align: center;
-  padding-top: 0px;
 }
