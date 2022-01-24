@@ -38,8 +38,6 @@ if (minutes < 10) {
 h2.innerHTML = `${day} ${hours}:${minutes} `;
 
 function displayWeatherCondition(response) {
-  let celsiusTemperature = response.data.main.temp;
-
   let iconElement = document.querySelector("#icon"); //search for the icon URL link
   document.querySelector("#city").innerHTML = response.data.name;
 
@@ -62,6 +60,7 @@ function displayWeatherCondition(response) {
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
   iconElement.setAttribute("alt", response.data.weather[0].description);
+  celsiusTemperature = response.data.main.temp;
 }
 function searchCity(city) {
   let apiKey = "b1c7074725f017b97210de1d82e98750";
