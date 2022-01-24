@@ -38,6 +38,8 @@ if (minutes < 10) {
 h2.innerHTML = `${day} ${hours}:${minutes} `;
 
 function displayWeatherCondition(response) {
+  let celsiusTemperature = response.data.main.temp;
+
   let iconElement = document.querySelector("#icon"); //search for the icon URL link
   document.querySelector("#city").innerHTML = response.data.name;
 
@@ -90,17 +92,17 @@ function getCurrentLocation(event) {
 }
 
 function displayFahrenheitTemperature(event) {
-  event.preventDefault;
-  //remove active class from celsius link and add it to fahrenheit when i click on it-  this is what i mean
+  event.preventDefault();
+  //from celsius link and add it to fahrenheit when i click on it-  this is what i mean
   celsiusLink.classList.remove("active");
   fahrenheitLink.classList.add("active");
   let temperatureElement = document.querySelector("#temperature");
-  let fahrenheitTemperature = (temperatureElement.innerHTML * 9) / 5 + 32;
+  let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
   temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
 }
 
 function displayCelsiusTemperature(event) {
-  event.preventDefault;
+  event.preventDefault();
   // now same here remove active from fahrenheit and add it to celsius when i click on celsius
   celsiusLink.classList.add("active");
   fahrenheitLink.classList.remove("active");
@@ -109,7 +111,6 @@ function displayCelsiusTemperature(event) {
 }
 
 let celsiusTemperature = null; //global variable outside the functions, can be accesed from inside a function
-
 let form = document.querySelector("#search-form");
 console.log(form);
 form.addEventListener("submit", handleCity);
