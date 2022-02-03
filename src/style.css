@@ -4,7 +4,7 @@ body {
   color: white;
 }
 .container {
-  border: 1px solid black;
+  border: 1px solid grey ;
   padding-top: 30px;
   padding-bottom: 30px;
   max-width: 510px;
