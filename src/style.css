@@ -1,7 +1,7 @@
 body {
-  background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
-  font-family: "Comfortaa", cursive;
-  color: black;
+  background: radial-gradient(circle at 10% 20%, rgba(234, 249, 249, 0.67) 0.1%, rgba(239, 249, 251, 0.63) 90.1%);
+  font-family: "Arial", cursive;
+  color: white;
 }
 .container {
   border: 1px solid black;
@@ -10,11 +10,7 @@ body {
   max-width: 510px;
   margin-top: 100px;
   margin-bottom: 100px;
-  background: radial-gradient(
-    484px at 49.4% 19%,
-    rgb(23, 156, 214) 0%,
-    rgb(52, 48, 111) 100.2%
-  );
+  background: #75aeef;
 
   border-radius: 10px;
   height: 700px;
@@ -24,25 +20,26 @@ body {
   background-color: white;
 }
 h1 {
-  font-family: "Comfortaa", cursive;
+  font-family: "Arial";
   color: white;
   text-align: center;
   font-size: 30px;
   padding-top: 50px;
 }
 h2 {
-  font-family: "Comfortaa", cursive;
-  color: black;
+  font-family: "Arial";
+  color:white;
   display: block;
-  margin-top: 10px;
-  margin-left: 10px;
+  
   text-align: center;
   font-size: 15px;
+  padding:10px 0px 10px 0px;
 }
 
 .icon {
   position: relative;
   top: -20px;
+ 
 }
 .temperature {
   position: relative;
@@ -53,44 +50,59 @@ h2 {
 .description {
   text-align: center;
   font-size: 22px;
+  padding-top: 5px;
 }
 .units {
   margin: 0;
   display: block;
 
-  font-size: 15px;
+  font-size: 18px;
   text-align: center;
   color: white;
 }
 .conditions {
-  font-family: "Comfortaa", cursive;
-  font-size: 16px;
+  font-family: "Arial", cursive;
+  font-size: 20px;
   padding-top: 100px;
   text-align: center;
-
   color: white;
 }
-.wrapper {
-  padding: 15px 0;
-}
+
 
 .weather-forecast{
-  margin-top: 20px;
+  margin-top: 25px;
   text-align: center;
+  padding-bottom: 20px;
+  background-color: #85bcf0;
+  border-radius: 2%;
+
+
 }
 
 .weather-forecast-date {
-  font-size: 16px;
-  opacity: 0.5;
+  color: white;
+  font-size: 18px;
+  padding-top: 30px;
+
 }
 .weather-forecast-temperature-min {
-  opacity: 0.5;
+  opacity: 0.7;
+  color: white;
+}
+.weather-forecast-temperature-max {
+  
+  color: white;
 }
 
 .weather-forecast-temperature{
-  font-size: 13px;
+  font-size: 16px;
+  color: white;
 }
 .footer {
   text-align: center;
   padding-top: 10px;
+  color: #000;
+}
+#temperature{
+  font-size: 48px;;
 }
