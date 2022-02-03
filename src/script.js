@@ -57,6 +57,8 @@ function displayForecast(response) {
   forecast.forEach(function (forecastDay, index) { //this forecastDay.dt function will return info i need from the array
     if(index <6){
   
+      forecastHTML =
+      forecastHTML +
       `
       <div class="col-4">
       <div class="weather-forecast-date">${formatDay(forecastDay.dt)}</div> 
