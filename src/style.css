@@ -1,10 +1,10 @@
 body {
-  background: radial-gradient(circle at 10% 20%, rgba(234, 249, 249, 0.67) 0.1%, rgba(239, 249, 251, 0.63) 90.1%);
+  background: #e6dece;
+
   font-family: "Arial", cursive;
-  color: white;
 }
 .container {
-  border: 1px solid grey ;
+  border: 1px solid grey;
   padding-top: 30px;
   padding-bottom: 30px;
   max-width: 510px;
@@ -28,18 +28,17 @@ h1 {
 }
 h2 {
   font-family: "Arial";
-  color:white;
+  color: white;
   display: block;
-  
+
   text-align: center;
   font-size: 15px;
-  padding:10px 0px 10px 0px;
+  padding: 10px 0px 10px 0px;
 }
 
 .icon {
   position: relative;
   top: -20px;
- 
 }
 .temperature {
   position: relative;
@@ -68,33 +67,28 @@ h2 {
   color: white;
 }
 
-
-.weather-forecast{
+.weather-forecast {
   margin-top: 25px;
   text-align: center;
   padding-bottom: 20px;
   background-color: #85bcf0;
   border-radius: 2%;
-
-
 }
 
 .weather-forecast-date {
   color: white;
   font-size: 18px;
   padding-top: 30px;
-
 }
 .weather-forecast-temperature-min {
   opacity: 0.7;
   color: white;
 }
 .weather-forecast-temperature-max {
-  
   color: white;
 }
 
-.weather-forecast-temperature{
+.weather-forecast-temperature {
   font-size: 16px;
   color: white;
 }
@@ -103,6 +97,6 @@ h2 {
   padding-top: 10px;
   color: #000;
 }
-#temperature{
-  font-size: 48px;;
+#temperature {
+  font-size: 48px;
 }
